@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy to Snowflake') {
             steps {
                 bat """
-                snowsql -a GY51478 -u ${SNOWFLAKE_CREDS_USR} -p ${SNOWFLAKE_CREDS_PSW} -d test_db -s test_db.public -f init_snowflake.sql
+                snowsql -a QVTLVZV-GY51478 -u ${SNOWFLAKE_CREDS_USR} -p ${SNOWFLAKE_CREDS_PSW} -d test_db -s test_db.public -f init_snowflake.sql
                 """
             }
         }
