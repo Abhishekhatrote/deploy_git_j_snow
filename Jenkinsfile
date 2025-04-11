@@ -1,13 +1,11 @@
+
+
+
+
 pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/Abhishekhatrote/deploy_git_j_snow.git'
-            }
-        }
-
         stage('Deploy to Snowflake') {
             steps {
                 bat '''
@@ -17,3 +15,20 @@ pipeline {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
